@@ -10,6 +10,7 @@ class SignUpApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: Theme.of(context).copyWith(
           pageTransitionsTheme: const PageTransitionsTheme(builders: {
             TargetPlatform.windows: FadeUpwardsPageTransitionsBuilder()

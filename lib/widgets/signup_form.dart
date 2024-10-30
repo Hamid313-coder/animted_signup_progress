@@ -25,21 +25,21 @@ class _SignUpFormState extends State<SignUpForm> {
           AnimatedProgressIndicator(value: _formProgress),
           Text('Sign up', style: Theme.of(context).textTheme.headlineMedium),
           Padding(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(12),
             child: TextFormField(
               controller: _firstNameTextController,
               decoration: const InputDecoration(hintText: 'First name'),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(12),
             child: TextFormField(
               controller: _lastNameTextController,
               decoration: const InputDecoration(hintText: 'Last name'),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(12),
             child: TextFormField(
               controller: _usernameTextController,
               decoration: const InputDecoration(hintText: 'Username'),
@@ -61,6 +61,7 @@ class _SignUpFormState extends State<SignUpForm> {
             onPressed: _formProgress == 1 ? _showWelcomeScreen : null,
             child: const Text('Sign up'),
           ),
+          const SizedBox(height: 12)
         ],
       ),
     );
